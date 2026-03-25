@@ -1,0 +1,1 @@
+".venv\Scripts\python.exe" "use SFT model to annotate\run_infer_ollama.py" --resume-dir "data\SFT model annotation" --workers 2 --progress

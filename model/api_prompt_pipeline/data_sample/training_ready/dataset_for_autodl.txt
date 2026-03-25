@@ -1,0 +1,7 @@
+指令：你是一个中国法律文书数据结构化专家。你的任务是根据给定的【原告名单】、【被告名单】及【费用段落】，提取案件受理费及其他诉讼费用的产生明细与最终分担情况。
+请严格输出标准 JSON 格式，不要包含 Markdown 标记或额外解释。输出结构需包含以下字段：
+1. total_litigation_cost (float): 案件受理费总金额。
+2. cost_details (list): 费用产生明细，包含 name(费用名称), amount(金额), paid_by(预交人)。
+3. cost_sharing (list): 费用分担结果，包含 bearer(承担人), amount(承担金额), type(连带/独立等)。
+问：【原告名单】：['原告：孔建忠。']\n【被告名单】：['被告：刘振昌。']\n【费用段落】：本案受理费25元由原告孔建忠负担。
+答：{"total_litigation_cost": 25.0, "generated_fees": [{"fee_category": "acceptance", "raw_name": "案件受理费", "amount": 25.0, "is_halved": false, "notes": null}], "burden_distribution": [{"payer_name": "孔建忠", "payer_role": "plaintiff", "total_burden_amount": 25.0, "liability_type": "sole"}]}

@@ -1,0 +1,115 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes/
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# Python cache / build
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+
+build/
+dist/
+site/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# =========================
+# Virtual env
+# =========================
+.venv/
+venv/
+env/
+ENV/
+pythonenv*/
+
+# =========================
+# Logs / temp / runtime
+# =========================
+*.log
+*.tmp
+*.temp
+*.pid
+*.lock
+logs/
+tmp/
+temp/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Secrets / credentials
+# =========================
+.env
+.env.*
+*.env
+**/api_keys.json
+**/secret*.json
+**/*token*.txt
+
+# =========================
+# Nested git metadata (avoid accidental nested repo commit)
+# =========================
+**/.git/
+
+# =========================
+# Model artifacts (too large for normal GitHub push)
+# =========================
+model/SFT model/raw_model/
+model/SFT model/gguf model/*.gguf
+
+# keep Modelfile text for reproducibility
+!model/SFT model/gguf model/Modelfile.from-gguf
+
+# common heavy checkpoints (generated during experiments)
+*.ckpt
+*.bin
+*.onnx
+*.h5
+*.pth
+
+# =========================
+# Generated outputs
+# =========================
+data/ollama annotation/
+data/loan_amount_extraction/
+
+model/judgment_partition_infer/output/*
+!model/judgment_partition_infer/output/.gitkeep
+
+# =========================
+# Oversized data files (known >100MB, blocked by GitHub normal push)
+# Keep other dataset files tracked for "as much as possible" upload.
+# =========================
+data/yishen/2014/2014-03.csv
+data/yishen_partition/2014/2014-03.json
+
+# optional run metadata from local runs
+**/run_summary.json
+**/run_meta.json
+**/predictions.jsonl

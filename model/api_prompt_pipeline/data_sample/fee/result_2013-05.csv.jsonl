@@ -1,0 +1,1 @@
+{"meta": {"case_no": "（2013）温平商初字第74号", "case_name": "杨启反与曾安芬、林贤果民间借贷纠纷一审民事判决书", "source_file": "2013-05.csv", "text_length": 1672, "truncated": false, "truncation_direction": "tail"}, "annotation": {"legal_cost_sentences": ["本案受理费4300元，由曾安芬、林坚果负担。"]}, "status": "success", "perf": {"latency": 1.71, "key_tail": "rsvn", "attempts": 1, "rate_limit_retries": 0}}

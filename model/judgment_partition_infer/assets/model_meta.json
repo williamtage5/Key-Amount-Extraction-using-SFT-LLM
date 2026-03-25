@@ -1,0 +1,28 @@
+{
+  "model_name": "finetune_20260118_172828/best_model.pt",
+  "zone_order": [
+    "Z1_Header",
+    "Z2_Preamble",
+    "Z3_Fact",
+    "Z4_Reasoning",
+    "Z5_Judgment",
+    "Z6_Footer",
+    "Z7_SignOff"
+  ],
+  "max_sentences": 240,
+  "max_chars_per_sent": 80,
+  "sentence_split_regex": "[。！？!?；;：:、\\n]+",
+  "anchors": {
+    "z1": {
+      "char": "号",
+      "max_chars": 100
+    },
+    "z4": {
+      "regex": "(判\\s*决\\s*如\\s*下|如\\s*下\\s*判\\s*决)\\s*[:：]?"
+    },
+    "policy_default": "auto"
+  },
+  "vocab_size": 2835,
+  "sha256_model": "ee9b16b62ff49195722e1e4e34d9c18375c997bc1b573cac64fc83b1b2bb03d9",
+  "sha256_vocab": "56ec8f59f1339428272d13af4956ea82b526a93057de30c3656f9adc5ec65778"
+}

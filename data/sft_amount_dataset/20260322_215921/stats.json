@@ -1,0 +1,16 @@
+{
+  "amount_input_dir": "E:\\Learning_journal_at_CUHK\\CUHK_MSc_Project-32\\Important_number_extraction\\data\\loan_amount_extraction\\20260322_215921",
+  "partition_dir": "E:\\Learning_journal_at_CUHK\\CUHK_MSc_Project-32\\Important_number_extraction\\data\\yishen_partition",
+  "output_dir": "E:\\Learning_journal_at_CUHK\\CUHK_MSc_Project-32\\Important_number_extraction\\data\\sft_amount_dataset\\20260322_215921",
+  "include_unknown": false,
+  "max_samples": null,
+  "total_amount_records": 5000,
+  "unique_amount_case_no": 5000,
+  "valid_samples": 3209,
+  "missing_case_no_in_partition": 0,
+  "ambiguous_case_no_in_partition": 766,
+  "invalid_amount_or_filtered": 1023,
+  "overlength": 2,
+  "duplicate_case_no_in_amount_input": 0,
+  "partition_records_without_case_no": 6
+}

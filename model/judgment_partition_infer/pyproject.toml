@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "judgment-partition-infer"
+version = "0.1.0"
+description = "Standalone inference bundle for judgment partition pointer model"
+requires-python = ">=3.8"
+dependencies = ["torch", "tqdm"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
